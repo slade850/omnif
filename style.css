@@ -122,7 +122,7 @@ h1 {
 footer, header, figure, main, nav, section {
     display: block;
 }
-.btn-full:link, .btn-full:visited {
+.btn-full:link, .btn-full:visited, input[type="submit"] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -132,7 +132,7 @@ footer, header, figure, main, nav, section {
     border: 1px solid #e67e22;
     color: #e67e22;
 }
-.btn:link, .btn:visited {
+.btn:link, .btn:visited, input[type="submit"] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -145,7 +145,7 @@ footer, header, figure, main, nav, section {
     color:white;
     background-color: #e67e22;
 }
-.btn-full:hover {
+.btn-full:hover, input[type="submit"]:hover {
     
     background-color: rgba(230, 131, 18, 0.8);
     border: 1px solid #e67e22;
@@ -352,28 +352,53 @@ cite img {
     display: flex;
     justify-content: center;
 }
-.contact-form {
-    height: 60px;
-    width: 650px;
+.box3 {
+    display: flex;
+    width: 685px;
+    justify-content: space-between;
+}
+.from1 {
+    width: 460px;
+}
+#name, #email, #find-us {
+    width: 460px;
+    height: 40px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc; 
+}
+textarea {
+    width: 460px;
+    height: 100px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc; 
 }
 footer {
-    display: flex;
+    display: block;
     background-color: rgb(39, 37, 37);
+    height: 200px;
 }
-footer ul {
-    list-style: none;
-}
-footer li {
-    display: inline;
-}
-footer p {
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-}
-footer li a:link, footer li a:visited {
+.footer-nav li a:link, .footer-nav li a:visited {
     text-decoration: none;
     border: 0;
     color: #888;
     transition: color 0.2s;
+}
+.footer-nav li {
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
+}
+#foot {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    height: 100px;
+    padding: 40px;
+}
+#foot3 {
+    text-align: center;
 }
